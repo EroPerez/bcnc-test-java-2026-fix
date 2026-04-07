@@ -52,7 +52,7 @@ Se valorará:
 
 ## Estructura del Proyecto 🗂️
 El proyecto consta de los siguientes archivos y directorios:
-- `demo/`: Directorio que contiene el código fuente del proyecto.
+- `src/`: Directorio que contiene el código fuente del proyecto.
 - `README.md`: Este archivo, que proporciona información general sobre el proyecto.
 
 ## Requisitos del Sistema 📊
