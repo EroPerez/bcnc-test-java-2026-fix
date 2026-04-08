@@ -30,14 +30,14 @@ jobs:
 
       - name: Build and run tests
         run: mvn --batch-mode verify
-        working-directory: demo
+        working-directory: src
 
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: demo/target/surefire-reports/
+          path: src/target/surefire-reports/
           retention-days: 7
 
   code-quality:
@@ -58,5 +58,5 @@ jobs:
 
       - name: Check code style (checkstyle)
         run: mvn --batch-mode checkstyle:check
-        working-directory: demo
+        working-directory: src
         continue-on-error: true
