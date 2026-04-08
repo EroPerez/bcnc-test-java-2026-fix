@@ -30,7 +30,7 @@ jobs:
 
       - name: Build and run tests
         run: mvn --batch-mode verify
-        working-directory: src
+        working-directory: .
 
       - name: Upload test results
         if: always()
@@ -58,5 +58,5 @@ jobs:
 
       - name: Check code style (checkstyle)
         run: mvn --batch-mode checkstyle:check
-        working-directory: src
+        working-directory: .
         continue-on-error: true
